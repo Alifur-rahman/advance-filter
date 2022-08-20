@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Advance Filter</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="assets/css/fontaswome.all.min.css" /> -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- start advance form area  -->
+    <section class="filter_from_area">
+      <div class="al_container">
+        <div class="filter_form">
+          <form action="#" method="get" id="alfilterform">
+            <div class="card_ui">
+              <div class="row">
+                <!-- product area  -->
+                <div class="col-md-6">
+                  <div class="filter_item">
+                    <h3>Products</h3>
+                    <div class="al-col-c-2">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            data-filter-group="product"
+                            name="product1"
+                            value="product1"
+                          />
+                          Product 1
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            data-filter-group="product"
+                            name="product2"
+                            value="product2"
+                          />
+                          Product 2
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            data-filter-group="product"
+                            name="product3"
+                            value="product3"
+                          />
+                          Product 3
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            data-filter-group="product"
+                            name="product4"
+                            value="product4"
+                          />
+                          Product 4
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="product5"
+                            data-filter-group="product"
+                            value="product5"
+                          />
+                          Product 5
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="product6"
+                            data-filter-group="product"
+                            value="product6"
+                          />
+                          Product 6
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="productall"
+                            data-filter-group="product"
+                            value="all"
+                            id="alProcutAll"
+                            checked
+                          />
+                          All Product
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Service area  -->
+                <div class="col-md-6 mt-3 mt-md-0">
+                  <div class="filter_item">
+                    <h3>Service</h3>
+                    <div class="al-col-c-2">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            data-filter-group="service"
+                            name="service1"
+                            value="service1"
+                          />
+                          Service 1
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="service2"
+                            data-filter-group="service"
+                            value="service2"
+                          />
+                          Service 2
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            data-filter-group="service"
+                            name="service3"
+                            value="service3"
+                          />
+                          Service 3
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="service4"
+                            data-filter-group="service"
+                            value="service4"
+                          />
+                          Service 4
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="service5"
+                            data-filter-group="service"
+                            value="service5"
+                          />
+                          Service 5
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="service6"
+                            data-filter-group="service"
+                            value="service6"
+                          />
+                          Service 6
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="serviceall"
+                            id="allService"
+                            data-filter-group="service"
+                            value="all"
+                            checked
+                          />
+                          All Service
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="al_range_item mt-3">
+                    <div class="d-flex justify-content-between">
+                      <h3 class="mb-0">Maximum Product Costs</h3>
+                      <p><span id="product_cost">20,00</span> €</p>
+                    </div>
+
+                    <input
+                      type="range"
+                      class="form-range"
+                      id="customRange1"
+                      name="product_cost"
+                      data-filter-group="product_cost"
+                      data-show-id="#product_cost"
+                      min="0"
+                      max="20"
+                      value="20"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="al_range_item mt-3">
+                    <div class="d-flex justify-content-between">
+                      <h3 class="mb-0">Maximum Service Costs</h3>
+                      <p><span id="service_cost">20,00</span> €</p>
+                    </div>
+
+                    <input
+                      type="range"
+                      class="form-range"
+                      name="service_cost"
+                      data-filter-group="service_cost"
+                      data-show-id="#service_cost"
+                      min="0"
+                      max="20"
+                      value="20"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end advance form area  -->
+    <!-- start short area  -->
+    <section class="short_area">
+      <div class="al_container">
+        <div class="row align-items-center">
+          <!-- show count  -->
+          <div class="col-4 col-sm-6 col-md-8">
+            <h4><span id="al-filter-result-count">20</span> Results</h4>
+          </div>
+          <!-- short by form  -->
+          <div class="col-8 col-sm-6 col-md-4">
+            <div class="form-group d-flex align-items-center">
+              <label for="" class="al-display-ruby">Short By</label>
+              <select class="form-select" aria-label="Default select example">
+                <option value="1">Name</option>
+                <option value="2">Product Costs</option>
+                <option value="3">Service Costs</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end short area  -->
+    <!-- start show results area  -->
+    <section class="filter_result_area">
+      <div class="al_container">
+        <div class="show_results_box" id="alfilterresult">
+          <!-- single show box  -->
+          <div class="card_ui d-flex mb-2 flex-wrap">
+            <div class="item_logo">
+              <img src="assets/images/default-logo.png" class="" alt="" />
+              <h1 class="d-block d-md-none mt-3">Company 1</h1>
+            </div>
+            <div class="item_contain">
+              <h1 class="d-none d-md-block">Company 1</h1>
+              <ul class="pt-3 pb-3">
+                <li>
+                  <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet,
+                  consetetur sedipscing elitr, sed diam
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet,
+                  consetetur sedipscing elitr,
+                </li>
+              </ul>
+              <div class="cost_btn_area d-flex justify-content-between">
+                <div class="d-flex">
+                  <ul>
+                    <li>Product Costs</li>
+                    <li>
+                      <b>10,00 <s>€</s></b>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>Service Costs</li>
+                    <li>
+                      <b>10,00 <s>€</s></b>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-primary"> Go to website</a>
+              </div>
+            </div>
+          </div>
+          <!-- single show box  -->
+          <div class="card_ui d-flex mb-2 flex-wrap">
+            <div class="item_logo">
+              <img src="assets/images/default-logo.png" class="" alt="" />
+              <h1 class="d-block d-md-none mt-3">Company 1</h1>
+            </div>
+            <div class="item_contain">
+              <h1 class="d-none d-md-block">Company 1</h1>
+              <ul class="pt-3 pb-3">
+                <li>
+                  <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet,
+                  consetetur sedipscing elitr, sed diam
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet,
+                  consetetur sedipscing elitr,
+                </li>
+              </ul>
+              <div class="cost_btn_area d-flex justify-content-between">
+                <div class="d-flex">
+                  <ul>
+                    <li>Product Costs</li>
+                    <li>
+                      <b>10,00 <s>€</s></b>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>Service Costs</li>
+                    <li>
+                      <b>10,00 <s>€</s></b>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-primary"> Go to website</a>
+              </div>
+            </div>
+          </div>
+          <!-- single show box  -->
+          <div class="card_ui d-flex mb-2 flex-wrap">
+            <div class="item_logo">
+              <img src="assets/images/default-logo.png" class="" alt="" />
+              <h1 class="d-block d-md-none mt-3">Company 1</h1>
+            </div>
+            <div class="item_contain">
+              <h1 class="d-none d-md-block">Company 1</h1>
+              <ul class="pt-3 pb-3">
+                <li>
+                  <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet,
+                  consetetur sedipscing elitr, sed diam
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet,
+                  consetetur sedipscing elitr,
+                </li>
+              </ul>
+              <div class="cost_btn_area d-flex justify-content-between">
+                <div class="d-flex">
+                  <ul>
+                    <li>Product Costs</li>
+                    <li>
+                      <b>10,00 <s>€</s></b>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>Service Costs</li>
+                    <li>
+                      <b>10,00 <s>€</s></b>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-primary"> Go to website</a>
+              </div>
+            </div>
+          </div>
+          <!-- single show box  -->
+          <div class="card_ui d-flex mb-2 flex-wrap">
+            <div class="item_logo">
+              <img src="assets/images/default-logo.png" class="" alt="" />
+              <h1 class="d-block d-md-none mt-3">Company 1</h1>
+            </div>
+            <div class="item_contain">
+              <h1 class="d-none d-md-block">Company 1</h1>
+              <ul class="pt-3 pb-3">
+                <li>
+                  <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet,
+                  consetetur sedipscing elitr, sed diam
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet,
+                  consetetur sedipscing elitr,
+                </li>
+              </ul>
+              <div class="cost_btn_area d-flex justify-content-between">
+                <div class="d-flex">
+                  <ul>
+                    <li>Product Costs</li>
+                    <li>
+                      <b>10,00 <s>€</s></b>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>Service Costs</li>
+                    <li>
+                      <b>10,00 <s>€</s></b>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-primary"> Go to website</a>
+              </div>
+            </div>
+          </div>
+          <!-- single show box  -->
+          <div class="card_ui d-flex mb-2 flex-wrap">
+            <div class="item_logo">
+              <img src="assets/images/default-logo.png" class="" alt="" />
+              <h1 class="d-block d-md-none mt-3">Company 1</h1>
+            </div>
+            <div class="item_contain">
+              <h1 class="d-none d-md-block">Company 1</h1>
+              <ul class="pt-3 pb-3">
+                <li>
+                  <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet,
+                  consetetur sedipscing elitr, sed diam
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet,
+                  consetetur sedipscing elitr,
+                </li>
+              </ul>
+              <div class="cost_btn_area d-flex justify-content-between">
+                <div class="d-flex">
+                  <ul>
+                    <li>Product Costs</li>
+                    <li>
+                      <b>10,00 <s>€</s></b>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>Service Costs</li>
+                    <li>
+                      <b>10,00 <s>€</s></b>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-primary"> Go to website</a>
+              </div>
+            </div>
+          </div>
+          <!-- single show box  -->
+          <div class="card_ui d-flex mb-2 flex-wrap">
+            <div class="item_logo">
+              <img src="assets/images/default-logo.png" class="" alt="" />
+              <h1 class="d-block d-md-none mt-3">Company 1</h1>
+            </div>
+            <div class="item_contain">
+              <h1 class="d-none d-md-block">Company 1</h1>
+              <ul class="pt-3 pb-3">
+                <li>
+                  <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet,
+                  consetetur sedipscing elitr, sed diam
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet,
+                  consetetur sedipscing elitr,
+                </li>
+              </ul>
+              <div class="cost_btn_area d-flex justify-content-between">
+                <div class="d-flex">
+                  <ul>
+                    <li>Product Costs</li>
+                    <li>
+                      <b>10,00 <s>€</s></b>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>Service Costs</li>
+                    <li>
+                      <b>10,00 <s>€</s></b>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-primary"> Go to website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- show more button  -->
+        <div class="show_more_button">
+          <a href="#" class="btn btn-primary"
+            >Show more <i class="fas fa-plus"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

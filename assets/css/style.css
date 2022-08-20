@@ -1,0 +1,181 @@
+/* custom css file  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,100&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+
+/* font-family: 'Ubuntu', sans-serif; */
+:root {
+  --al-pry_color: linear-gradient(
+    90deg,
+    rgba(179, 186, 153, 1) 0%,
+    rgba(117, 187, 188, 1) 100%
+  );
+}
+*,
+body,
+h1,
+h2,
+h3,
+h4 h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.al_container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+.filter_from_area {
+  margin-top: 40px;
+}
+.card_ui {
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  padding: 11px 15px;
+}
+.al-col-c-2 {
+  column-count: 2;
+}
+h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+h4 {
+  font-size: 20px;
+}
+.filter_from_area .form-check {
+  margin-bottom: 0.125rem;
+  font-size: 14px;
+  cursor: pointer;
+}
+.filter_from_area .form-check label,
+.filter_from_area .form-check input {
+  cursor: pointer;
+}
+
+.filter_item {
+  padding: 0px 5px;
+}
+.al-display-ruby {
+  display: ruby;
+  margin-right: 10px;
+}
+.short_area {
+  padding-top: 15px;
+}
+.item_contain a {
+  line-height: 30px;
+  display: inline-block;
+  background: var(--al-pry_color);
+  border: none;
+  padding: 8px 30px;
+  transition: 0.3s;
+}
+.item_contain a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(117, 187, 188, 1) 0%,
+    rgba(179, 186, 153, 1) 100%
+  );
+}
+.item_contain ul li {
+  font-size: 14px;
+  line-height: 22px;
+}
+.item_contain ul li i {
+  margin-right: 6px;
+  color: #008400a3;
+}
+.cost_btn_area ul:first-child {
+  margin-right: 20px;
+}
+.cost_btn_area ul li {
+  line-height: inherit !important;
+}
+.item_logo {
+  flex: 0 0 20%;
+}
+.item_contain {
+  flex: 0 0 80%;
+}
+.item_logo img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+input[type="range"]::-moz-range-track {
+  cursor: pointer;
+  background: var(--al-pry_color);
+  border-radius: 6px;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0px 0px 3px #7e807e;
+  border: 3px solid #ffffff;
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #b6ba9b;
+  cursor: pointer;
+}
+
+.show_more_button a {
+  padding: 8px 30px;
+  background: var(--al-pry_color);
+  border: none;
+  color: #fff;
+  font-weight: 400;
+}
+.show_more_button {
+  text-align: center;
+  margin-top: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .item_logo {
+    flex: 0 0 100%;
+    display: flex;
+  }
+  .item_logo img {
+    margin-right: 10px;
+  }
+  .item_contain {
+    flex: 0 0 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .cost_btn_area {
+    flex-direction: column !important;
+  }
+  .item_contain a {
+    margin-top: 10px;
+    max-width: 200px;
+  }
+}
